@@ -48,7 +48,7 @@ function isValidEmail(email) {
 
 function removeError(event) {
   var el = event.target;
-  el.placeholder = el.getAttribute("data-name");
+  el.placeholder = el.getAttribute("title");
   el.classList.remove("error");
   el.removeEventListener("focus", removeError);
 }
