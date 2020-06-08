@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" type="text/css" href="introComponent.css">
+</head>
+<body>
+
+  <section>
+    
+    <div class="container">
+
+      <div class="left">
+
+        <h1>Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+
+      </div>
+
+      <div class="right">
+        
+        <div class="price"><span class="bold-text">Try it free 7 days</span> <span class="light-text">then $20/mo. thereafter</span></div>
+
+        <div class="form-container">
+
+          <form name="signup" onsubmit="return validate()" method="post">
+
+            <input type="text" name="firstName" placeholder="First Name" data-name="First Name">
+            <span class="error-msg">First Name cannot be empty</span>
+
+            <input type="text" name="lastName" placeholder="Last Name" data-name="Last Name">
+            <span class="error-msg">Last Name cannot be empty</span>
+
+            <input type="text" name="email" placeholder="Email Address" data-name="Email Address">
+            <span id="emailErrorMsg" class="error-msg">Email Address cannot be empty</span>
+
+            <input type="password" name="password" placeholder="Password" data-name="Password">
+            <span class="error-msg">Password cannot be empty</span>
+
+            <input type="submit" value="Claim your free trial" id="submitButton">
+
+            <p>By clicking the button, you are agreeing to our <span class="red-text">Terms and Services</span></p>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sankara Gomathy M</a>.
+    </p>
+  </footer>
+
+
+  <script type="text/javascript" src="introComponent.js"></script>
+
+</body>
+</html>
